@@ -11,8 +11,22 @@ public class Calculator extends java.rmi.server.UnicastRemoteObject implements C
 	}
 
 	@Override
-	public int add(int x, int y) throws RemoteException {
+	public Double add(Double x, Double y) throws RemoteException {
 		return x + y;
 	}
 
+	@Override
+	public Double subtract(Double x, Double y) throws RemoteException {
+		return x -y;
+	}
+
+	@Override
+	public Double multiply(Double x, Double y) throws RemoteException {
+		return x * y;
+	}
+
+	@Override
+	public Double divide(Double x, Double y) throws RemoteException {
+		return x / y;
+	}
 }
